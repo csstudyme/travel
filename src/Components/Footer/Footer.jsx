@@ -1,9 +1,163 @@
 import React from 'react'
-import './footer.css' 
+import './footer.css'
+import video2 from '../../Assets/video2.mp4' 
+import { FiSend } from "react-icons/fi";
+import { SiYourtraveldottv } from "react-icons/si";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { AiFillYoutube } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaTripadvisor } from "react-icons/fa";
+import { FiChevronRight } from "react-icons/fi";
+
 
 const Footer = () => {
   return (
-    <div>footer</div>
+    <section className='footer'>
+      <div className="videoDiv">
+        <video src={video2} loop autopla type="video/mp4"></video>
+      </div>
+
+      <div className="secContent container">
+        <div className="contactDiv flex">
+          <div className="text">
+            <small>KEEP IN TOUCH</small>
+            <h2>Travel with us</h2>
+          </div>
+          
+          <div className="inputDiv flex">
+            <input type="text" placeholder='Enter Email address' />
+            <button className='btn flex' type='submit'>
+            SEND <FiSend className='icon' />
+
+            </button>
+          </div>
+        </div>
+
+        <div className="footerCard flex">
+          <div className="footerIntro flex">
+            <div className="logoDiv">
+              <a href="#" className='logo flex'>
+              <SiYourtraveldottv className='icon'/>
+              Travel.
+              </a>
+            </div>
+
+            <div className="footerParagraph">
+            It is very important for the customer to pay attention to the adipiscing process. By inventing them here, when the least pleasure is found, in time they provide us not with hatred, but with pain, but with desire itself in and resolved?
+            </div>
+            <div className="footerSocials flex">
+            <AiOutlineTwitter  className='icon' />
+            <AiFillYoutube  className='icon' />
+            <AiFillInstagram  className='icon' />
+            <FaTripadvisor  className='icon' />
+
+            </div>
+          </div>
+
+          <div className="footerLinks grid">
+            {/* first */}
+            <div className="linkGroup">
+              <span className="groupTitle">
+                Our Agency
+              </span>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Services
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Insurance
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Agency
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Tourism
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Payment
+              </li>
+            </div>
+            {/* two */}
+            <div className="linkGroup">
+              <span className="groupTitle">
+                Partners 
+              </span>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Booking
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Rentcars
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Hostelworld
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Trivago
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Tripadvisor
+              </li>
+            </div>
+            {/* third */}
+            <div className="linkGroup">
+              <span className="groupTitle">
+                LAST MINUTE
+              </span>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              London
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              California
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Indonesia
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Europe
+              </li>
+
+              <li className="footerList flex">
+              <FiChevronRight className='icon' />
+              Oceania
+              </li>
+            </div>
+
+          </div>
+
+          <div className="footerDiv flex">
+            <small>BEST TRAVEL WEBSITE</small>
+            <small>COPYRIGHT RESERVED - AJAY 2024</small>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 

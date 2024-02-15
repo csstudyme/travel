@@ -14,8 +14,8 @@ const App = () => {
     <Navbar/>
     <Home/>
     <Main/>
-    {/* <Footer/>
-    <LoginSignup /> */}
+    <Footer/>
+    {/* <LoginSignup /> */}
     </>
   )
 }
