@@ -1,7 +1,9 @@
 :root {
   --PrimaryColor: hsl(199, 100%, 33%);
   --SecondaryColor: hsl(187, 85%, 43%);
-  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
     hsl(199, 100%, 33%)
   );
   --whiteColor: hsl(0, 0%, 100%);
@@ -186,4 +188,50 @@
 .footer .secContent .footerCard .footerDiv small {
   font-size: 10px;
   color: var(--whiteColor);
+}
+
+@media screen and (min-width: 500px) {
+  .footer .secContent .footerCard .footerLinks {
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 1rem;
+  }
+  .footer .secContent .footerCard .footerDiv {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer .secContent .footerCard .footerDiv small {
+    font-size: 14px;
+    color: var(--whiteColor);
+  }
+}
+@media screen and (min-width: 660px) {
+  .footer .secContent .contactDiv {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .secContent .contactDiv .inputDiv {
+    width: -moz-max-content;
+    width: max-content;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .footer .secContent .contactDiv .inputDiv input {
+    width: 60%;
+  }
+  .footer .secContent .contactDiv .inputDiv .btn {
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
+@media screen and (min-width: 840px) {
+  .footer {
+    padding: 5rem 0;
+  }
+  .footer .secContent .footerCard {
+    flex-direction: row;
+  }
+  .footer .secContent .footerCard .footerLinks {
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 1rem;
+  }
 }/*# sourceMappingURL=footer.css.map */

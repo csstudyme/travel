@@ -1,6 +1,6 @@
 :root {
   --PrimaryColor: hsl(199, 100%, 33%);
-  --SecondaryColor: hs1(187, 85%, 43%);
+  --SecondaryColor: hsl(187, 85%, 43%);
   --gradientColor: linear-gradient(
     to right,
     hsl(187, 85%, 43%),
@@ -38,10 +38,10 @@
 
       &::after {
         position: absolute;
-        content: "";
+        content: '';
         background: var(--SecondaryColor);
         height: 5px;
-        width: 120px;
+        width: 110px;
         right: 0;
         bottom: 5px;
         z-index: -1;
@@ -161,6 +161,37 @@
             }
         }
       }
+    }
+  }
+}
+
+
+// media query
+
+@media screen and (min-width: 500px) {
+  .title{
+    font-size: 1.5rem;
+
+    &::after{
+      width: 155px !important;
+    }
+  }
+
+  .secContent{
+    grid-template-columns: repeat(2,1fr);
+
+    .singleDestination{
+      height: auto;
+  }
+  }
+}
+
+@media screen and (min-width: 840px){
+  .secContent{
+    grid-template-columns: repeat(3,1fr);
+
+    .singleDestination{
+      height: auto;
     }
   }
 }

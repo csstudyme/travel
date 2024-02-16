@@ -1,6 +1,6 @@
 :root {
     --PrimaryColor: hsl(199, 100%, 33%);
-    --SecondaryColor: hs1(187, 85%, 43%);
+    --SecondaryColor: hsl(187, 85%, 43%);
     --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),
       hsl(199, 100%, 33%)
     );
@@ -119,3 +119,64 @@
     }
 
   }
+
+
+//   mdia queries ----------
+
+@media screen and (min-width: 769px) {
+    .toggleNavbar,.closeNavbar{
+        display: none
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+
+        .navBar{
+            .navLists{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+                .navItem{
+                    .navLink{
+                        color: var(--textColor);
+                        padding: 0 0.45rem;
+                        font-size: 0.9rem;
+                        font-weight: 500;
+
+                        &:hover{
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+
+                .btn{
+                    margin-left: 1rem;
+                    a{
+                        color: var(--whiteColor);
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px){
+    .header{
+        .navBar{
+            .navLists{
+                .navItem{
+                    padding: 0 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px){
+    .header{
+        padding: 1rem 8.5rem;
+}
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './footer.css'
 import video2 from '../../Assets/video2.mp4' 
 import { FiSend } from "react-icons/fi";
@@ -9,8 +9,15 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTripadvisor } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
 
+import Aos from 'aos'
+import 'aos/dist/aos.css' 
 
 const Footer = () => {
+
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  }, [])
+
   return (
     <section className='footer'>
       <div className="videoDiv">
@@ -19,16 +26,15 @@ const Footer = () => {
 
       <div className="secContent container">
         <div className="contactDiv flex">
-          <div className="text">
+          <div data-aos="fade-up" className="text">
             <small>KEEP IN TOUCH</small>
             <h2>Travel with us</h2>
           </div>
           
           <div className="inputDiv flex">
-            <input type="text" placeholder='Enter Email address' />
-            <button className='btn flex' type='submit'>
+            <input data-aos="fade-up" type="text" placeholder='Enter Email address' />
+            <button data-aos="fade-up" className='btn flex' type='submit'>
             SEND <FiSend className='icon' />
-
             </button>
           </div>
         </div>
@@ -42,10 +48,10 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="footerParagraph">
+            <div data-aos="fade-up" className="footerParagraph">
             It is very important for the customer to pay attention to the adipiscing process. By inventing them here, when the least pleasure is found, in time they provide us not with hatred, but with pain, but with desire itself in and resolved?
             </div>
-            <div className="footerSocials flex">
+            <div data-aos="fade-up" className="footerSocials flex">
             <AiOutlineTwitter  className='icon' />
             <AiFillYoutube  className='icon' />
             <AiFillInstagram  className='icon' />
@@ -56,7 +62,7 @@ const Footer = () => {
 
           <div className="footerLinks grid">
             {/* first */}
-            <div className="linkGroup">
+            <div data-aos="fade-up" data-aos-duration="3000"  className="linkGroup">
               <span className="groupTitle">
                 Our Agency
               </span>
@@ -87,7 +93,7 @@ const Footer = () => {
               </li>
             </div>
             {/* two */}
-            <div className="linkGroup">
+            <div data-aos="fade-up" data-aos-duration="4000" className="linkGroup">
               <span className="groupTitle">
                 Partners 
               </span>
@@ -118,7 +124,7 @@ const Footer = () => {
               </li>
             </div>
             {/* third */}
-            <div className="linkGroup">
+            <div data-aos="fade-up" data-aos-duration="5000" className="linkGroup">
               <span className="groupTitle">
                 LAST MINUTE
               </span>
