@@ -99,6 +99,9 @@ body{
     background: var(--bodyColor);
 }
 
+.code{
+ font-family: source-code-pro, Menlo, Monaco, Consloe, 'Couries New', monospace;
+}
 
 /* media query */
 
