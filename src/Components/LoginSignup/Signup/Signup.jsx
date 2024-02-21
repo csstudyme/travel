@@ -1,18 +1,23 @@
-import React ,{useState} from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
-import './login.css';
+import './signup.css';
+import { FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
-
-const Login = () => {
-
+import img1 from "../../../Assets/night.jpg";
+import Login from '../Login/Login'
+const Signup = () => {
   return (
     <>
     <section className="Login containers logsections">
       <div className="wrapper">
         <form action="">
-          <h1>Login</h1>
+          <h1>Sign up</h1>
 
+          <div className="input-box">
+          <input type="text" placeholder='Name' />
+            <FaUser className='icon' />
+            </div>
           <div className="input-box">
             <input type="email" placeholder='Email' />
             <MdEmail className='icon'/>
@@ -21,13 +26,11 @@ const Login = () => {
             <input type="password" placeholder='Password' />
             <RiLockPasswordFill className='icon'/>
           </div>
-          <div className="forgot">
-            <a href='#'>Forgot password</a>
-          </div>
           
-          <button type='submit'>Login</button>
+          <button type='Sign up'>Sign up</button>
+
           <div className="register-link">
-            <p>Don't have an account? <a><Link className='linkk' to='/signup'>Register</Link></a></p>
+            <p>Already have an account! <a><Link to='/login'>Login</Link></a></p>
           </div>
         </form>
       </div>
@@ -36,4 +39,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Signup

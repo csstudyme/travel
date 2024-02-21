@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './footer.css'
-import video2 from '../../Assets/video2.mp4' 
+import video2 from '../../../Assets/video2.mp4' 
 import { FiSend } from "react-icons/fi";
 import { SiYourtraveldottv } from "react-icons/si";
 import { AiOutlineTwitter } from "react-icons/ai";

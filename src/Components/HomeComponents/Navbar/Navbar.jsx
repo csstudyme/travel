@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./navbar.css";
+import {Link} from 'react-router-dom'
 import { SiYourtraveldottv } from "react-icons/si";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
@@ -56,7 +57,10 @@ const Navbar = () => {
           </li>
 
           <button className="btn">
-            <a href="#">Book Now</a>
+            <a><Link to='/login'>Login</Link></a>
+          </button>
+          <button className="btn">
+            <a><Link to='/signup'>Signup</Link></a>
           </button>
 
         </ul>

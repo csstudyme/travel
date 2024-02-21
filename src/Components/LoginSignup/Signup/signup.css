@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: seagreen;
+  background-image: url(../../../Assets/night.jpg);
 }
 .logsections .wrapper {
   width: 420px;
@@ -15,12 +15,12 @@
   border-radius: 10px;
   padding: 30px 40px;
   border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
 }
 .logsections .wrapper h1 {
-  font-size: 36px;
+  font-size: 35px;
   text-align: center;
 }
 .logsections .wrapper .input-box {
@@ -78,17 +78,26 @@
   color: #333;
   font-weight: 700;
 }
-.logsections .wrapper .register-link {
-  font-size: 14.5px;
-  text-align: center;
-  margin: 20px 0 15px;
+.logsections .wrapper .submt-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 20px auto;
 }
-.logsections .wrapper .register-link p a Link {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
+.logsections .wrapper .submt-container .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 45px;
+  background: #42006C;
+  color: #797979;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
 }
-.logsections .wrapper .register-link p a Link:hover {
-  -webkit-text-decoration: un;
-          text-decoration: un;
-}/*# sourceMappingURL=login.css.map */
+.logsections .wrapper .submt-container .gray {
+  color: #42006C;
+  background: #ffffff;
+}/*# sourceMappingURL=signup.css.map */

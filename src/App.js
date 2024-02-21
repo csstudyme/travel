@@ -1,26 +1,24 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import './app.css'
-
-// import Navbar from './Components/Navbar/Navbar'
 import Home from './Components/Home/Home'
-// import Main from './Components/Main/Main'
-// import Footer from './Components/Footer/Footer'
-import Login from './Components/LoginSignup/Login'
-import Signup from './Components/LoginSignup/Signup'
+import Signup from './Components/LoginSignup/Signup/Signup'
+import Login from './Components/LoginSignup/Login/Login'
+
 
 
 
 const App = () => {
   return (
     <>
-
-    {/* <Login />
-    <Signup/> */}
-    {/* <Navbar/> */}
-    <Home/>
-    {/* <Main/>
-    <Footer/> */}
+    <BrowserRouter>
+    <Routes>
+    <Route path='/' element={<Home />}></Route>
+    <Route path='/home' element={<Home />}></Route>
+      <Route path='/login' element={<Login />}></Route>
+      <Route path='/signup' element={<Signup />}></Route>
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }
